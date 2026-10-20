@@ -26,9 +26,16 @@
 
 ## 📊 GitHub Contributions
 
+<h2 align="center">📊 GitHub Contributions</h2>
+
 <p align="center">
-  <img src="https://ghchart.rshah.org/701A3D/vikaschauhan6397" alt="GitHub contribution heatmap" width="100%" />
+  <img
+    src="https://ghchart.rshah.org/701A3D/vikaschauhan6397"
+    alt="GitHub contribution chart"
+    width="100%"
+  />
 </p>
+
 
 ## 🤝 Connect
 
