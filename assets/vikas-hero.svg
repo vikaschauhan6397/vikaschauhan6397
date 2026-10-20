@@ -1,0 +1,55 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" role="img" aria-labelledby="title desc">
+  <title id="title">Vikas Chauhan — Developer Profile</title>
+  <desc id="desc">Animated burgundy banner with a technical grid and glowing line.</desc>
+
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#10070C"/>
+      <stop offset="55%" stop-color="#451126"/>
+      <stop offset="100%" stop-color="#190B12"/>
+    </linearGradient>
+    <linearGradient id="light" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#701A3D" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#E5B5C7" stop-opacity=".65"/>
+      <stop offset="100%" stop-color="#701A3D" stop-opacity="0"/>
+      <animate attributeName="x1" values="-1;1;-1" dur="8s" repeatCount="indefinite"/>
+      <animate attributeName="x2" values="0;2;0" dur="8s" repeatCount="indefinite"/>
+    </linearGradient>
+    <pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse">
+      <path d="M36 0H0V36" fill="none" stroke="#E5B5C7" stroke-opacity=".09" stroke-width="1"/>
+    </pattern>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="360" rx="22" fill="url(#bg)"/>
+  <rect width="1200" height="360" rx="22" fill="url(#grid)"/>
+  <rect width="1200" height="360" rx="22" fill="url(#light)"/>
+
+  <circle cx="1050" cy="85" r="110" fill="#701A3D" opacity=".18">
+    <animate attributeName="r" values="95;125;95" dur="7s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="1050" cy="85" r="76" fill="none" stroke="#C77B9B" stroke-opacity=".4"/>
+  <circle cx="1050" cy="85" r="55" fill="none" stroke="#E5B5C7" stroke-opacity=".25" stroke-dasharray="5 10">
+    <animateTransform attributeName="transform" type="rotate" from="0 1050 85" to="360 1050 85" dur="30s" repeatCount="indefinite"/>
+  </circle>
+
+  <path d="M0 275 C240 220 350 335 600 260 S950 210 1200 265" fill="none" stroke="#C77B9B" stroke-opacity=".55" stroke-width="2">
+    <animate attributeName="d" values="M0 275 C240 220 350 335 600 260 S950 210 1200 265;M0 275 C240 330 350 220 600 285 S950 310 1200 265;M0 275 C240 220 350 335 600 260 S950 210 1200 265" dur="9s" repeatCount="indefinite"/>
+  </path>
+
+  <text x="76" y="105" fill="#E5B5C7" font-family="monospace" font-size="17" letter-spacing="4">HELLO, WORLD — I'M</text>
+  <text x="72" y="177" fill="#F8F0F3" font-family="Arial, Helvetica, sans-serif" font-size="58" font-weight="700">Vikas Chauhan</text>
+  <text x="76" y="220" fill="#E5B5C7" font-family="Arial, Helvetica, sans-serif" font-size="23">AI &amp; Technology Enthusiast | Aspiring Developer</text>
+
+  <path d="M76 245 H470" stroke="#701A3D" stroke-width="5" stroke-linecap="round"/>
+  <path d="M76 245 H470" stroke="#F8F0F3" stroke-width="2" stroke-linecap="round" filter="url(#glow)" stroke-dasharray="70 394">
+    <animate attributeName="stroke-dashoffset" values="464;0;-464" dur="5s" repeatCount="indefinite"/>
+  </path>
+
+  <text x="76" y="300" fill="#F8F0F3" opacity=".8" font-family="monospace" font-size="16">LEARN  /  BUILD  /  CREATE</text>
+  <text x="1120" y="325" text-anchor="end" fill="#C77B9B" font-family="monospace" font-size="13">PROFILE.SVG • 01</text>
+</svg>
